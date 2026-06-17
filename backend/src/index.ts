@@ -10,7 +10,7 @@ import { asyncHandler } from './middlewares/async-handler.middleware';
 import { errorHandler } from './middlewares/error-handler.middlewarte';
 import { HTTPSTATUS } from './config/http.config';
 import { logger } from './utils/logger';
-// import { logTail } from './config/logtail.config';
+import { logTail } from './config/logtail.config';
 import { connectDatabase, disconnectDatabase } from './config/database.config';
 import internalRoutes from './routes/internal';
 import publicRoutes from './routes/public';
@@ -77,7 +77,7 @@ async function startServer() {
           //disconnect db
           await disconnectDatabase();
 
-        //   await logTail.flush();
+          await logTail.flush();
 
           process.exit(0);
         } catch (error) {
