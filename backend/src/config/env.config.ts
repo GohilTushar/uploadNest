@@ -22,7 +22,7 @@ const envConfig = () => ({
 
   ALLOWED_ORIGINS: getEnv(
     'ALLOWED_ORIGINS',
-    'https://upload-nest-iota.vercel.app/',
+    'https://upload-nest-iota.vercel.app',
   ),
 });
 
