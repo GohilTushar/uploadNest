@@ -53,7 +53,7 @@ const Docs = () => {
                     background: backgroundColor,
                   }}
                 >
-                  {"npm install @uploadnest/client"}
+                  {"npm install @tusharg_33/uploadnest-sdk"}
                 </SyntaxHighlighter>
               </div>
             </CardContent>
@@ -76,7 +76,7 @@ const Docs = () => {
                     padding: "1rem",
                   }}
                 >
-                  {`import { UploadNestClient } from "@uploadnest/client";
+                  {`import { UploadNestClient } from "@tusharg_33/uploadnest-sdk";
 
 const client = new UploadNestClient({
   apiKey: process.env.UPLOADNEST_API_KEY, // Your API key
@@ -108,7 +108,7 @@ console.log(result.files);`}
                     padding: "1rem",
                   }}
                 >
-                  {`import { UploadNestClient } from "@uploadnest/client";
+                  {`import { UploadNestClient } from "@tusharg_33/uploadnest-sdk";
 import fs from "fs";
 
 const client = new UploadNestClient({
@@ -149,7 +149,7 @@ await client.uploadFiles(buffer);`}
                     padding: "1rem",
                   }}
                 >
-                  {`import { UploadNestClient } from "@uploadnest/client";
+                  {`import { UploadNestClient } from "@tusharg_33/uploadnest-sdk";
 
 const client = new UploadNestClient({
   apiKey: "your-api-key",
@@ -197,7 +197,7 @@ function FileUpload() {
                   }}
                 >
                   {`// app/upload/page.tsx
-import { UploadNestClient } from "@uploadnest/client";
+import { UploadNestClient } from "@tusharg_33/uploadnest-sdk";
 
 async function uploadAction(formData: FormData) {
   "use server";
@@ -235,7 +235,7 @@ async function uploadAction(formData: FormData) {
                     padding: "1rem",
                   }}
                 >
-                  {`import { ValidationError, UploadError } from "@uploadnest/client/errors";
+                  {`import { ValidationError, UploadError } from "@tusharg_33/uploadnest-sdk/errors";
 
 try {
   const result = await client.uploadFiles(files);
@@ -262,12 +262,12 @@ try {
               For detailed information on all methods, types, and advanced
               usage, visit the{" "}
               <a
-                href="https://www.npmjs.com/package/@uploadnest/client"
+                href="https://www.npmjs.com/package/@tusharg_33/uploadnest-sdk"
                 className="underline font-medium text-primary hover:text-red-700 dark:hover:text-red-400"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                @uploadnest/client package on npm
+                @tusharg_33/uploadnest-sdk package on npm
               </a>
               .
             </p>
